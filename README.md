@@ -64,6 +64,10 @@ add .ssh and .ssh/authorized_keys file
 mkdir /.ssh/
 nano /.ssh/authorized_keys   # copy the key here
 ```
+You can now connect using the command:
+```
+$ ssh -i /c/users/user/.ssh/grader grader@13.126.93.116 -p 2200
+```
 
 9- Configure the local timezone to UTC.
 ```
@@ -124,3 +128,5 @@ Restart to launch
 ```
 sudo service apache2 restart
 ```
+
+[Virtual environment reference](https://vishnut.me/blog/ec2-flask-apache-setup.html)
